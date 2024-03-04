@@ -52,7 +52,7 @@ function appendToShoppingListEl(listitem) {
 
     listEl.textContent = itemValue
 
-    listEl.addEventListener("click", function () {
+    listEl.addEventListener("dblclick", function () {
         let exactLocationOfItem = ref(database, `shoppingList/${itemId}`)
 
         remove(exactLocationOfItem)
